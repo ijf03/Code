@@ -68,6 +68,8 @@
       border: none;
       overflow: hidden;
       padding: 0;
+      align-items: center;
+      justify-content: center;
     }
     #dark-mode-toggle img,
     #dark-mode-toggle svg {
@@ -132,10 +134,10 @@
     background: transparent;
     border: none;
     display: block;
-    position: absolute;
-    top: 0.625rem;
-    right: 4.375rem;
-    z-index: 1000;
+    position: relative;
+    top:  1.5rem;
+    right: 0.5rem;
+    z-index: 1;
     overflow: hidden;
   }
   #dark-mode-toggle img,
@@ -218,37 +220,25 @@
 }
 
 
-/*-- -------------------------- -->
-<---          Services          -->
-<--- -------------------------- -*/
+
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #services-1301 .cs-title,
-  body.dark-mode #services-1301 .cs-text {
-      color: var(--bodyTextColorWhite);
+  body.dark-mode #services-1117 .cs-h2,
+  body.dark-mode #services-1117 .cs-item-text {
+    color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #services-1301 .cs-text {
-      opacity: 0.8;
+  body.dark-mode #services-1117 .cs-item-text {
+    opacity: 0.8;
   }
-  body.dark-mode #services-1301 .cs-card-group {
-      background-color: rgba(0, 0, 0, 0.3);
+  body.dark-mode #services-1117 .cs-graphic {
+    opacity: 0.2;
   }
-  body.dark-mode #services-1301 .cs-item {
-      border-color: rgba(255, 255, 255, 0.1);
-  }
-  body.dark-mode #services-1301 .cs-item:hover {
-      background-color: rgba(0, 0, 0, 0.6);
-      border-color: rgba(0, 0, 0, 0.6);
-  }
-  body.dark-mode #services-1301 .cs-h3,
-  body.dark-mode #services-1301 .cs-item-text {
-      color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #services-1301 .cs-item-text {
-      opacity: 0.8;
+  body.dark-mode #services-1117 .cs-icon {
+    /* turns the icon white */
+    filter: grayscale(1) brightness(1000%);
   }
 }
-
+     
 
 /*-- -------------------------- -->
 <---          Reviews           -->

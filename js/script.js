@@ -31,7 +31,7 @@ for (const item of dropDowns) {
 	};
 	item.addEventListener('click', onClick);
 }
-
+                                
 
 //
 //    The Dark Mode System
@@ -73,4 +73,26 @@ document.getElementById('dark-mode-toggle').addEventListener('click', () => {
 	// on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
 	localStorage.getItem('theme') === 'light' ? enableDarkMode() : disableDarkMode();
 });
-                                
+
+
+
+// NEW JAVASCRIPT: SLIDING CONTENT SECTIONS
+window.addEventListener('scroll', function() {
+  var elements = [
+	// list of sections to slide into the viewport
+    document.getElementById('services-1117'),
+    document.getElementById('collection-1552'),
+    document.getElementById('reviews-62'),
+    document.getElementById('cs-contact-242')
+  ];
+
+  elements.forEach(function(element) {
+    var position = element.getBoundingClientRect();
+
+    // checking whether partially visible before each section slides so that the animation is seen
+    if(position.top < window.innerHeight && position.bottom >= 0) {
+      element.classList.remove('off-screen');
+      element.classList.add('slide-in');
+    }
+  });
+});

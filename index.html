@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=s, initial-scale=1.0">
-    <title>Document</title>
+    <title>Floriana Cakes</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/dark.css">
+    <!-- Add favicon -->
+    <link rel="icon" href="images/favicon.ico"> 
     <script src="./js/script.js" defer></script>
+    
 </head>
 <body>
 
@@ -18,7 +21,7 @@
     <div class="cs-container">
         <!--Nav Logo-->
         <a href="" class="cs-logo" aria-label="back to home">
-            <img src="./images/Floriana Cakes Logo Enhanced.jpeg" alt="logo" width="250" height="29" aria-hidden="true" decoding="async">
+            <img src="./images/Floriana Cakes Logo Enhanced.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
@@ -50,28 +53,26 @@
                     </li>
                     <li class="cs-li">
                         <a href="" class="cs-li-link">
-                            About Us
+                            FAQ
                         </a>
                     </li>
                     <li class="cs-li">
                         <a href="" class="cs-li-link">
-                            FAQ
+                            Contact Us
                         </a>
                     </li>
                 </ul>
             </div>
         </nav>
-            <!--Dark Mode toggle-->
-            <!-- Place at the bottom of your container that wraps around your <nav> navigation list -->
-            <!-- If there is no container wrapping your <nav>, add one.  This should NOT be placed inside the navigation list -->
-            <button id="dark-mode-toggle">
-                <!--Moon is an inline SVG so you can edit the color if needed-->
-                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/sun.svg" decoding="async" alt="sun" width="15" height="15">
-            </button>
+        <a href="" class="cs-button-solid cs-nav-button">Order now</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button>
     </div>
 </header>
-
+                                
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
@@ -100,10 +101,9 @@
                                 
 
 <!-- ============================================ -->
-<!--                    Services                  -->
+<!--                  Services                    -->
 <!-- ============================================ -->
-
-<section id="services-1301">
+<section id="services-1117" class="off-screen">
     <div class="cs-container">
         <div class="cs-content">
             <div class="cs-flex-group">
@@ -116,40 +116,41 @@
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
-                <a href="" class="cs-link">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brain.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
-                    <h3 class="cs-h3">Product Offerings</h3>
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-icon1.svg" alt="icon" width="48" height="48">
+                    <!--If you want to remove this background shape, add a background color to the cs-image-group so it will look good. Otherwise remove the height an width from that group so there's no extra space around the icon-->
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-shape.svg" alt="shape" width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Become a Volunteer</h2>
                     <p class="cs-item-text">
-                        Indulge in a delightful array of cakes, including wedding and birthday specialties, alongside an assortment of pastries like croissants and muffins.
+                        We help companies develop powerful corporate social responsibility
                     </p>
-                </a>
+                </div>
             </li>
             <li class="cs-item">
-                <a href="" class="cs-link">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/users.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
-                    <h3 class="cs-h3">Customization Services</h3>
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-icon2.svg" alt="icon" width="48" height="48">
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-shape.svg" alt="shape" width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Quick Fundraise</h2>
                     <p class="cs-item-text">
-                        Personalize your sweet moments with custom-designed cakes tailored to your unique tastes and occasions, including options for dietary preferences like vegan and gluten-free.
+                        We help companies develop powerful corporate social responsibility
                     </p>
-                </a>
+                </div>
             </li>
             <li class="cs-item">
-                <a href="" class="cs-link">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
-                    <h3 class="cs-h3">Specialty Services</h3>
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-icon3.svg" alt="icon" width="48" height="48">
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-shape.svg" alt="shape" width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Start Donating</h2>
                     <p class="cs-item-text">
-                        Elevate your celebrations with our specialty services, offering cake decorating workshops, event catering, and seasonal-themed treats for every occasion.
+                        We help companies develop powerful corporate social responsibility
                     </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
-                    <h3 class="cs-h3">Customer Experience</h3>
-                    <p class="cs-item-text">
-                        Experience the utmost in customer service with our friendly and knowledgeable staff, seamless online ordering, and prompt delivery, ensuring your satisfaction with every bite.
-                    </p>
-                </a>
+                </div>
             </li>
         </ul>
     </div>
@@ -159,70 +160,70 @@
 <!--                  Collection                  -->
 <!-- ============================================ -->
 
-<section id="collection-1552">
+<section id="collection-1552" class="off-screen">
     <div class="cs-container">
         <ul class="cs-card-group">
             <li class="cs-item cs-item-offer">
                 <div class="cs-text-wrapper">
-                    <h3 class="cs-h3">Welcome to Floriana Cakes</h3>
-                    <span class="cs-item-text">Unforgettable indulgence with 30 years of experince</span>
+                    <h3 class="cs-h3">30 years of experince</h3>
+                    <!-- <span class="cs-item-text"></span> -->
                     <a class="cs-button-solid" href="/">Learn More</a>
                     <picture class="cs-background" aria-hidden="true">
                         <source media="(max-width: 600px)"
                                 srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-womens-offer-m.png">
                         <source media="(min-width: 601px)"
-                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-womens-offer.png">
+                                srcset="./images/Collection/left.png">
                         <img loading="lazy" decoding="async"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-womens-offer.png"
+                                src="./images/Collection/left.png"
                                 width="365" height="201">
                     </picture>
                 </div>
             </li>
             <li class="cs-item">
-                <a class="cs-category" href="/">T-Shirts</a>
+                <a class="cs-category" href="/">Wedding Cakes</a>
                 <picture class="cs-background" aria-hidden="true">
                     <source media="(max-width: 600px)"
                             srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-tshirts.png">
                     <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-tshirts.png">
+                            srcset="./images/Collection/wedding_cake.png">
                     <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-tshirts.png"
+                            src="./images/Collection/wedding_cake.png"
                             width="365" height="201">
                 </picture>
             </li>
             <li class="cs-item">
-                <a class="cs-category" href="/">Bags</a>
+                <a class="cs-category" href="/">Birthday</a>
                 <picture class="cs-background" aria-hidden="true">
                     <source media="(max-width: 600px)"
                             srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-bags.png">
                     <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-bags.png">
+                            srcset="./images/Collection/birthday.png">
                     <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-bags.png" width="365"
+                            src="./images/Collection/birthday.png" width="365"
                             height="201">
                 </picture>
             </li>
             <li class="cs-item">
-                <a class="cs-category" href="/">Shoes</a>
+                <a class="cs-category" href="/">Sweet Treats Station</a>
                 <picture class="cs-background" aria-hidden="true">
                     <source media="(max-width: 600px)"
                             srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-shoes.png">
                     <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-shoes.png">
+                            srcset="./images/Collection/Sweet Treats.png">
                     <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-shoes.png"
+                            src="./images/Collection/Sweet Treats.png"
                             width="365" height="201">
                 </picture>
             </li>
             <li class="cs-item">
-                <a class="cs-category" href="/">Accessories</a>
+                <a class="cs-category" href="/">Others</a>
                 <picture class="cs-background" aria-hidden="true">
                     <source media="(max-width: 600px)"
                             srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-accessories.png">
                     <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-accessories.png">
+                            srcset="./images/Collection/others.png">
                     <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-accessories.png"
+                            src="./images/Collection/others.png"
                             width="365" height="201">
                 </picture>
             </li>
@@ -235,7 +236,7 @@
 <!--                   Reviews                    -->
 <!-- ============================================ -->
 
-<section id="reviews-62">
+<section id="reviews-62" class="off-screen">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Our Reviews</span>
@@ -275,7 +276,7 @@
 <!--                Contact Form                  -->
 <!-- ============================================ -->
 
-<section id="cs-contact-242">
+<section id="cs-contact-242" class="off-screen">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Here To Help</span>
@@ -357,7 +358,7 @@
         <div class="cs-logo-group">
             <a aria-label="go back to home" class="cs-logo" href="">
                 <!-- Remove the light class if you don't need the dark logo -->
-                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="./images/Floriana Cakes Logo Enhanced.jpeg" alt="logo" width="240" height="32">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="./images/Floriana Cakes Logo Enhanced.png" alt="logo" width="240" height="32">
             </a>
             <div class="cs-social">
                 <a class="cs-social-link" aria-label="visit google profile" href="">
