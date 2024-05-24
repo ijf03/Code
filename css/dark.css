@@ -1,0 +1,336 @@
+/* Add this as it's own dark.css file and linked on all pages */
+/*-- -------------------------- -->
+<---      Core Dark Styles      -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    :root {
+      --dark: #1d0e00;
+      --medium: #693500;
+      --accent: #988367;
+      --bodyTextSubColor: #CBA273;
+      --bodyTextColorWhite: #fafbfc;
+    }
+    body.dark-mode {
+      background-color: var(--dark);
+    }
+    body.dark-mode p,
+    body.dark-mode li,
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode h4,
+    body.dark-mode h5,
+    body.dark-mode h6,
+    body.dark-mode .cs-title,
+    body.dark-mode .cs-text,
+    body.dark-mode .cs-li {
+      color: var(--bodyTextSubColor);
+    }
+    body.dark-mode .light {
+      display: none;
+    }
+    body.dark-mode .dark {
+      display: block !important;
+    }
+    .dark {
+      /* class used to hide elements that only need to be seen when dark mode is enabled */
+      display: none;
+    }
+    body.dark-mode #cs-contact-242 .cs-topper,
+    body.dark-mode .cs-topper,
+    body.dark-mode #reviews-62 .cs-topper {
+      color: var(--bodyTextColorWhite)
+    }
+  }
+  /*-- -------------------------- -->
+  <---      Dark Mode Toggle      -->
+  <--- -------------------------- -*/
+  /* Mobile */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode #dark-mode-toggle .cs-sun {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+    body.dark-mode #dark-mode-toggle .cs-moon {
+      transform: translate(-50%, -150%);
+      opacity: 0;
+    }
+    #dark-mode-toggle {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 3.75rem;
+      width: 3rem;
+      height: 3rem;
+      background: transparent;
+      border: none;
+      overflow: hidden;
+      padding: 0;
+    }
+    #dark-mode-toggle img,
+    #dark-mode-toggle svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1.5625rem;
+      height: 1.5625rem;
+      pointer-events: none;
+    }
+    #dark-mode-toggle .cs-moon {
+      z-index: 2;
+      transition: transform 0.3s,
+                  opacity 0.3s,
+                  fill 0.3s;
+      fill: #000;
+    }
+    #dark-mode-toggle .cs-sun {
+      z-index: 1;
+      transform: translate(-50%, 100%);
+      opacity: 0;
+      transition: transform 0.3s,
+                  opacity 0.3s;
+    }
+  }
+  /* Desktop */
+  @media only screen and (min-width: 64rem) {
+    #dark-mode-toggle {
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: none;
+      margin-left: 1.875rem;
+      margin-bottom: 0rem;
+    }
+    #dark-mode-toggle .moon {
+      /* change to whatever you need */
+      fill: #fff;
+    }
+  }
+
+
+/*-- -------------------------- -->
+<---     Global StylesSheet     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #dark-mode-toggle .cs-sun {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  body.dark-mode #dark-mode-toggle .cs-moon {
+    opacity: 0;
+    transform: translate(-50%, -150%);
+    fill: #fff;
+  }
+  #dark-mode-toggle {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+    display: block;
+    position: absolute;
+    top: 0.625rem;
+    right: 4.375rem;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  #dark-mode-toggle img,
+  #dark-mode-toggle svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  #dark-mode-toggle .cs-moon {
+    z-index: 2;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  #dark-mode-toggle .cs-sun {
+    opacity: 0;
+    z-index: 1;
+    transform: translate(-50%, 100%);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #dark-mode-toggle {
+    margin: 0;
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+  }
+  #dark-mode-toggle:hover {
+    cursor: pointer;
+  }
+}
+
+/*-- -------------------------- -->
+<---     Mobile Navigation      -->
+<--- -------------------------- -*/
+/* Dark Mode */
+@media only screen and (max-width: 63.9375rem) {
+  body.dark-mode #cs-navigation {
+    background-color: var(--dark);
+  }
+  body.dark-mode #cs-navigation .cs-logo {
+    /* makes it white */
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #cs-navigation .cs-line {
+    background-color: #fff;
+  }
+  body.dark-mode #cs-navigation .cs-ul-wrapper {
+    background-color: var(--medium);
+  }
+  body.dark-mode #cs-navigation .cs-li-link {
+    color: var(--bodyTextColorWhite);
+  }
+}
+
+
+/*-- -------------------------- -->
+<---     Desktop Navigation     -->
+<--- -------------------------- -*/
+/* Dark Mode */
+@media only screen and (min-width: 64rem) {
+  body.dark-mode #cs-navigation {
+    background-color: var(--dark);
+  }
+  body.dark-mode #cs-navigation .cs-logo {
+    /* makes it turn white */
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #cs-navigation .cs-li-link {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-navigation .cs-li-link:before {
+    background-color: var(--primaryLight);
+  }
+}
+
+
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-1301 .cs-title,
+  body.dark-mode #services-1301 .cs-text {
+      color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #services-1301 .cs-text {
+      opacity: 0.8;
+  }
+  body.dark-mode #services-1301 .cs-card-group {
+      background-color: rgba(0, 0, 0, 0.3);
+  }
+  body.dark-mode #services-1301 .cs-item {
+      border-color: rgba(255, 255, 255, 0.1);
+  }
+  body.dark-mode #services-1301 .cs-item:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-color: rgba(0, 0, 0, 0.6);
+  }
+  body.dark-mode #services-1301 .cs-h3,
+  body.dark-mode #services-1301 .cs-item-text {
+      color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #services-1301 .cs-item-text {
+      opacity: 0.8;
+  }
+}
+
+
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews-62 .cs-topper {
+      color: var(--primaryLight);
+  }
+  body.dark-mode #reviews-62 .cs-title,
+  body.dark-mode #reviews-62 .cs-text,
+  body.dark-mode #reviews-62 .cs-name,
+  body.dark-mode #reviews-62 .cs-desc,
+  body.dark-mode #reviews-62 .cs-item-text {
+      color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #reviews-62 .cs-item-text,
+  body.dark-mode #reviews-62 .cs-text {
+      opacity: 0.8;
+  }
+}
+
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #cs-contact-242 .cs-text,
+  body.dark-mode #cs-contact-242 .cs-title {
+      color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-contact-242 #cs-form-242 label,
+  body.dark-mode #cs-contact-242 #cs-form-242 input,
+  body.dark-mode #cs-contact-242 #cs-form-242 textarea {
+      background-color: transparent;
+      color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-contact-242 #cs-form-242 label::placeholder,
+  body.dark-mode #cs-contact-242 #cs-form-242 input::placeholder,
+  body.dark-mode #cs-contact-242 #cs-form-242 textarea::placeholder {
+      /* lighten up the color of the text by 90%*/
+      filter: brightness(1.9);
+      color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-contact-242 .cs-icon {
+      /* makes it so bright it turns white */
+      filter: brightness(900%);
+  }
+  body.dark-mode #cs-contact-242 .cs-header,
+  body.dark-mode #cs-contact-242 .cs-link {
+      color: var(--bodyTextColorWhite);
+  }
+}
+
+
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #cs-footer-274 {
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #cs-footer-274 .cs-text,
+  body.dark-mode #cs-footer-274 .cs-header,
+  body.dark-mode #cs-footer-274 .cs-nav-link,
+  body.dark-mode #cs-footer-274 .cs-nav-li {
+      color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-footer-274 .cs-text:before,
+  body.dark-mode #cs-footer-274 .cs-header:before,
+  body.dark-mode #cs-footer-274 .cs-nav-link:before,
+  body.dark-mode #cs-footer-274 .cs-nav-li:before {
+      background-color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-footer-274 .cs-logo {
+      /* turns it white */
+      filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #cs-footer-274 .cs-copyright {
+      color: #b4b2c7;
+  }
+}
+
+                              
