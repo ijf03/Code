@@ -851,6 +851,9 @@ body {
   #collection-1552 .cs-text-wrapper {
     /* 150px - 265px */
     max-width: clamp(9.375rem, 20vw, 16.5625rem);
+    margin: 0 auto;
+    display: block; 
+    text-align: center;
   }
   #collection-1552 .cs-h3 {
     font-size: var(--headerFontSize);
