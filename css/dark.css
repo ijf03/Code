@@ -219,10 +219,23 @@
   }
 }
 
-
-
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #icon-1 {
+    content: url('https://img.icons8.com/?size=100&id=40786&format=png&color=ffffff')
+  }
+  
+  body.dark-mode #icon-2 {
+    content: url('https://img.icons8.com/?size=100&id=40786&format=png&color=ffffff')
+  }
+  
+  body.dark-mode #icon-3 {
+    content: url('https://img.icons8.com/?size=100&id=7165&format=png&color=ffffff')
+  }
+
   body.dark-mode #services-1117 .cs-h2,
   body.dark-mode #services-1117 .cs-item-text {
     color: var(--bodyTextColorWhite);
@@ -264,8 +277,13 @@
 /*-- -------------------------- -->
 <---          Contact           -->
 <--- -------------------------- -*/
-/* Dark Mode */
+
 @media only screen and (min-width: 0rem) {
+
+  body.dark-mode .map {
+    filter: invert(100%) contrast(80%);
+  }
+
   body.dark-mode #cs-contact-242 .cs-text,
   body.dark-mode #cs-contact-242 .cs-title {
       color: var(--bodyTextColorWhite);
@@ -297,7 +315,7 @@
 /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
-/* Dark Mode */
+
 @media only screen and (min-width: 0rem) {
   body.dark-mode #cs-footer-274 {
       background-color: rgba(0, 0, 0, 0.2);

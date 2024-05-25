@@ -670,6 +670,19 @@ body {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+
+  #icon-1 {
+    content: url('https://img.icons8.com/?size=100&id=40786&format=png&color=000000')
+  }
+  
+  #icon-2 {
+    content: url('https://img.icons8.com/?size=100&id=40786&format=png&color=000000')
+  }
+  
+  #icon-3 {
+    content: url('https://img.icons8.com/?size=100&id=7165&format=png&color=000000')
+  }
+
   #services-1117 {
     padding: var(--sectionPadding);
   }
