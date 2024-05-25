@@ -96,3 +96,9 @@ window.addEventListener('scroll', function() {
     }
   });
 });
+
+//NEW JAVASCRIPT: FORM SUBMISSION
+document.getElementById('cs-form-242').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    alert('Form submitted successfully!');
+});
