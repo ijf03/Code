@@ -102,3 +102,11 @@ document.getElementById('cs-form-242').addEventListener('submit', function(event
     event.preventDefault(); // Prevent the form from submitting normally
     alert('Form submitted successfully!');
 });
+
+
+//NEW JAVASCRIPT (non user interactive): Copy right date automated
+document.addEventListener('DOMContentLoaded', (event) => {
+	const yearElement = document.getElementById('copyright-year');
+	const currentYear = new Date().getFullYear();
+	yearElement.textContent = currentYear;
+});

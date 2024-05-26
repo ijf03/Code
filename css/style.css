@@ -1473,8 +1473,6 @@ body {
       /* takes up all the space, lets the other ul's wrap below it */
       width: 100%;
       position: relative;
-  }
-  #cs-footer-274 .cs-logo-group {
       /* 44px - 52px */
       margin-bottom: clamp(2.75rem, 6.8vw, 3.25rem);
   }
@@ -1519,6 +1517,11 @@ body {
       height: 0.8125rem;
       width: auto;
       display: block;
+  }
+  #cs-footer-274 .cs-copyright-privacy {
+      color: var(--bodyTextColor);
+      font-size: 0.9rem;
+      line-height: 1.2em;
   }
   #cs-footer-274 .cs-nav {
       padding: 0;
