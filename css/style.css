@@ -49,6 +49,10 @@ body {
   margin: 0 0 1rem 0;
   color: var(--headerColor);
   position: relative;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .cs-text {
@@ -59,6 +63,9 @@ body {
   max-width: 40.625rem;
   margin: 0;
   color: var(--bodyTextColor);
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .slide-in {
@@ -603,7 +610,7 @@ body {
       max-width: 51.8125rem;
       margin: 0 auto 1rem 0;
       color: #fff;
-      position: relative;
+      text-align: center;
   }
   #hero-1059 .cs-text {
       /* 16px - 20px */
@@ -760,10 +767,12 @@ body {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     line-height: 1.2em;
-    font-weight: 700;
     text-align: inherit;
     margin: 0 0 0.75rem;
     color: var(--headerColor);
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    font-style: normal;
   }
   #services-1117 .cs-item-text {
     font-size: 1rem;
@@ -771,6 +780,9 @@ body {
     text-align: inherit;
     margin: 0;
     color: var(--bodyTextColor);
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
   }
 }
 /* Tablet - 768px */
@@ -1069,6 +1081,9 @@ body {
       line-height: 1.5em;
       margin: auto;
       color: var(--bodyTextColor);
+      font-family: "Forum", serif;
+      font-weight: 400;
+      font-style: normal;
   }
   #reviews-62 .cs-button-solid {
       font-size: 1rem;
