@@ -672,7 +672,7 @@ body {
 @media only screen and (min-width: 0rem) {
 
   #icon-1 {
-    content: url('https://img.icons8.com/?size=100&id=40786&format=png&color=000000')
+    content: url('https://img.icons8.com/?size=100&id=NhkG2v84SKg3&format=png&color=000000')
   }
   
   #icon-2 {
@@ -1059,7 +1059,7 @@ body {
       line-height: 1.5em;
       text-align: center;
       margin: 0 0 1rem;
-      color: #7d799c;
+      color: var(--accent);
       display: block;
   }
   #reviews-62 .cs-item-text {
@@ -1217,7 +1217,7 @@ body {
       padding-left: 1.25rem;
       /* set transparent border so on hover border doesn't make it glitch */
       border: 1px solid transparent;
-      border-bottom: 1px solid #b4b2c7;
+      border-bottom: 1px solid var(--accent);
       /* prevents border & padding from affecting height */
       box-sizing: border-box;
       transition: border 0.3s;
@@ -1228,7 +1228,7 @@ body {
   }
   #cs-contact-242 .cs-input::placeholder,
   #cs-contact-242 .cs-textarea::placeholder {
-      color: #7d799c;
+      color: var(--accent);
   }
   #cs-contact-242 .cs-textarea {
       font-family: inherit;
